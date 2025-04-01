@@ -1,3 +1,249 @@
-body {
+#titulo{
   color: tomato;
 }
+/* #=id */
+/* .=class */
+p.especial {
+  color: mediumseagreen;
+}
+p.texto {
+  color: slateblue;
+}
+div p {
+  color: aquamarine;
+}
+div h2, div h3 {
+  color: brown
+}
+*{
+  font-size: 24px;
+  /*color: black;*/
+}
+/* este es un comentario */
+
+/* .color {
+   # se utiliza siempre en hexadecimal
+  
+  color: #000 negro pleno
+  color: #fff blanco pleno
+  color: #f00 rojo pleno
+  color: #0f0 verde pleno
+  color: #00f amarillo pleno
+  
+  mientras mas cercano a #fff nos va dando colores mas claros
+  ejem: color: #eee gris claro
+  
+  #000000
+  los primeros dos son el rojo
+  los segundos dos son verde 
+  los terceros dos son azul
+  
+  si agarramos el primer digito le pones el color 
+  si agarramos el segundo digito le variamos la intensidad
+} 
+.color {
+  color: rgb(0,0,0); negro
+  rgb(255,0,0); rojo
+  rgb(0,255,0); verde
+  rgb(0,0,255); azul
+  rgb(0,255,255); se pueden usar en combinacion
+}*/
+
+
+.color{
+  /*border: 5px red inset*/
+ /* primero grosor
+  segundo color
+  tercero estilo */
+  /*
+  tipos de estilo
+  dotted (borde de puntos)
+  dashed (linea punteada)
+  solid (linea solida)
+  double (linea doble)
+  groove (se puede usar en elementos tridimencionales)
+  rigde (se puede usar en elementos tridimencionales)
+  inset (se puede usar en elementos tridimencionales)
+  outset (se puede usar en elementos tridimencionales)
+  none
+  hidden 
+  */
+  border-style: solid; 
+  border-color: blue;
+  border-radius: 5px;
+  border-width: 5px;
+}
+
+
+#fondo{
+ /* background-color: red;*/
+  background-color: rgba(255,0,0);
+  /*background-color: rgba(0,0,0,0.3);
+  los primeros tres dijitos son como siempre pero el cuarto es la opacidad o transparencia que se le da al elemento */
+  /*opacity: 0.3;*/
+  /* le da opacidad al elemento completo no solo al fondo */
+  height: 400px;
+ /* background-image: url('styles/img/1.png'); */
+ /* background-repeat: no-repeat;*/
+ /* repeat-x; se ven horizontal
+  repeat-y; se ven vertical */
+  /*background-position: left top;*/
+  /* hay dos posiciones 
+  la primera eje orizontal 
+  la segunda eje vertical */
+  /*en la segunda se pueden ponir diferentes valores como:
+  top= arriba
+  center= medio
+  bottom= boton*/
+  background: #f00 url('img/1.png') repeat-y center bottom / 100px 100px;
+ /* background-size: 100px 100px;*/
+  /*
+  background-size: auto; tamaño real
+  backround-size: contiene la imagen
+  background-size: cover; se adapta al tamaño del explorador */
+}
+
+.margen{
+  background-color: chocolate;
+  margin: 15px 20px 25px 30px;
+  /*
+  tenemos cuatro posiciones 
+  primera arriba
+  segunda derecha
+  tercera abajo
+  cuarta izquierda
+  
+  si son tres 
+  30px arriba 
+  25px horizontal
+  20px abajo
+  
+  si son dos 
+  30px vertical
+  25px horizontal
+  
+  si es uno solo
+  todos los lados son iguales 
+  
+  lo podemos hacer tanto en margin como en padding
+  */
+  padding: 30px 25px 20px 15px;
+  border: solid 1px black;
+  height: 100px;
+  /* height es alto */
+  width: 50px;
+  overflow: visible;
+  /*este valor viene por defecto, si el texto es mas largo que es sector este va a quedar sobresaliente del mismo
+  */
+  /*
+  hay variis tipos para usar
+  overflow: hidden; este oculta el texto saliente
+  overflow: croll; este agrega barras laterales para poder movernos dentro del recuadro y ver todo el contenido
+  */
+  outline: 1px solid red;
+}
+
+.text{
+  font-family: 'Roboto', sans-serif;
+  /*verdana, geneva, tahona, sans-serif;*/
+  /* son losbtipos de letras para el texto en caso de que no tome alguna de las anteriores
+  en google fonts podemos descargar tipos de letras copiamos el link de la señalada y la pegamos en el head
+  */
+  text-align: center;
+  /* podemos usar tambien
+  top, left, rigt  */
+  text-decoration: underline;
+  /* 
+  underlone subraya
+  none viene por defecto (no es nada)
+  line-through es una linea por encima del texto dejandolo como tachado
+  overline pone una linea por sobre el texto
+  */
+  text-shadow: 3px 5px 5px blue
+  /* en este caso 
+  el primero es derecha
+  el segundo es abajo 
+  si agregamos un tercero este seria agregar cantidad de sombra o difuminado
+  */
+}
+a:link {
+  color: blueviolet;
+}
+a:visited {
+  color: gray;
+}
+a:hover{
+  color: yellow;
+}
+a:active{
+  color: red;
+}
+/*todos estos selectores pon para indicar el estado de los links 
+primero color normal en el que aparece escrito
+segundo color en el que se pone una vez es visitado
+tercero color que se pone cuando pasamos por encima del link
+cuarto color que se pone cuando lo estamos clicleando seleccionando
+
+este ordem se debe respetar 
+ejemplo no se puede poner el cuarto valor despues del segundo 
+*/
+ul{
+  background-color: cyan;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+table{
+  width: 100%;
+  border-collapse: collapse;
+}
+th, td{
+  border: solid 1px #eee;
+  padding: 5px;
+}
+th{
+  background-color: tomato;
+  color: white;
+  text-align: left;
+}
+tr:nth-child(even){
+  background-color: #eee;
+  /*con este elemento seleccionamos elementos en particular, no todo
+  even significa impar
+  odd significa par*/
+}
+tr:hover{
+  background-color: #aaa;
+  cursor: pointer;
+}
+span{
+  display: block;
+  /*display: none;*/
+  /*visibility: hidden;*/
+  max-width: 300px;
+  background-color: red
+}
+.inline{
+  display: inline;
+}
+#position{
+  position: sticky;
+  /* 
+  relativo a donde tiene que estar el elemento
+  static todos vienen asi 
+  fixed se antepone en la linea pero queda fijado en su lugar y se mueve con todo el documento
+  absolute tambien se posiciona delante del elemento padre pero no se va a mover
+  sticky mezcla entre relative y fixed
+  */
+  left: 20px;
+  top: 25px;
+}
+.left{
+  float: left;
+  width: 100px;
+}
+.container{
+  height: 200px;
+}
+
+
