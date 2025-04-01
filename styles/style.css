@@ -13,7 +13,7 @@ div p {
   color: aquamarine;
 }
 div h2, div h3 {
-  color: brown
+  color: brown;
 }
 *{
   font-size: 24px;
@@ -159,7 +159,7 @@ div h2, div h3 {
   line-through es una linea por encima del texto dejandolo como tachado
   overline pone una linea por sobre el texto
   */
-  text-shadow: 3px 5px 5px blue
+  text-shadow: 3px 5px 5px blue;
   /* en este caso 
   el primero es derecha
   el segundo es abajo 
@@ -221,7 +221,7 @@ span{
   /*display: none;*/
   /*visibility: hidden;*/
   max-width: 300px;
-  background-color: red
+  background-color: red;
 }
 .inline{
   display: inline;
