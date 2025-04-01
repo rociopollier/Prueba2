@@ -105,7 +105,7 @@ div h2, div h3 {
 
 .margen{
   background-color: chocolate;
-  margin: 15px 20px 25px 30px;
+  margin: 15px;
   /*
   tenemos cuatro posiciones 
   primera arriba
@@ -127,12 +127,12 @@ div h2, div h3 {
   
   lo podemos hacer tanto en margin como en padding
   */
-  padding: 30px 25px 20px 15px;
+  padding: 30px 15px 5px;
   border: solid 1px black;
   height: 100px;
   /* height es alto */
   width: 50px;
-  overflow: visible;
+  overflow: scroll; 
   /*este valor viene por defecto, si el texto es mas largo que es sector este va a quedar sobresaliente del mismo
   */
   /*
@@ -144,15 +144,15 @@ div h2, div h3 {
 }
 
 .text{
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Bungee Tint', sans-serif;
   /*verdana, geneva, tahona, sans-serif;*/
   /* son losbtipos de letras para el texto en caso de que no tome alguna de las anteriores
   en google fonts podemos descargar tipos de letras copiamos el link de la señalada y la pegamos en el head
   */
-  text-align: center;
+  text-align: justify;
   /* podemos usar tambien
   top, left, rigt  */
-  text-decoration: underline;
+  text-decoration: overline;
   /* 
   underlone subraya
   none viene por defecto (no es nada)
@@ -237,13 +237,17 @@ span{
   */
   left: 20px;
   top: 25px;
-}
+} 
+
+
 .left{
   float: left;
-  width: 120px;
-}
-.container{
-  height: 200px;
+  width: 100px;
+  
 }
 
 
+
+.container {
+  height: 200px
+}
